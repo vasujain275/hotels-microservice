@@ -1,0 +1,20 @@
+meta {
+  name: Create a Rating
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{rating-service}}/ratings
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "userId":"6335eb61-b3df-447e-a744-33607834a8b2",
+    "hotelId":"b6dad072-9443-451b-93d8-a1a4577ec4e9",
+    "rating":9,
+    "feedback":"Really Good Experience"
+  }
+}

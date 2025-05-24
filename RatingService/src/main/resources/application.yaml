@@ -3,7 +3,7 @@ spring:
     name: RatingService
   data:
     mongodb:
-      uri: mongodb://root:example@localhost:27017
+      uri: mongodb://root:example@localhost:27017/hotel-microservice?authSource=admin
 
 server:
   port: 8083

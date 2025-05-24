@@ -1,0 +1,11 @@
+meta {
+  name: Get All Hotels
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{hotel-service}}/hotels
+  body: none
+  auth: inherit
+}

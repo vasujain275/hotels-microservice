@@ -1,7 +1,6 @@
 package me.vasujain.hotel.HotelService.controller;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 import me.vasujain.hotel.HotelService.dto.HotelDTO;
 import me.vasujain.hotel.HotelService.model.Hotel;
 import me.vasujain.hotel.HotelService.response.ApiResponse;
@@ -89,5 +88,5 @@ public class HotelController {
                 .data(newHotel)
                 .message("Hotel created successfully")
                 .build());
-    }2
+    }
 }

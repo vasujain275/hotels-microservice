@@ -1,0 +1,19 @@
+meta {
+  name: Create A Hotel
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{hotel-service}}/hotels
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name":"Taj",
+    "location":"New Delhi",
+    "about":"5 star Luxry Hotel in Delhi"
+  }
+}
