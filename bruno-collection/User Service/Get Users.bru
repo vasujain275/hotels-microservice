@@ -1,0 +1,19 @@
+meta {
+  name: Get Users
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{user-service}}/users
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name":"Vasu Jain",
+    "email":"mail@vasujain.me",
+    "about":"Owner"
+  }
+}
