@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: HotelService
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hotel-hotelServiceDB
+    username: postgres
+    password: postgres123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8082
+  servlet:
+    context-path: /api/v1
