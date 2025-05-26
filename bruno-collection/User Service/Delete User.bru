@@ -1,0 +1,19 @@
+meta {
+  name: Delete User
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{user-service}}/users/7031de6e-3ca3-4576-a11e-2ef0bfb63c93
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "name":"Vasu Jain",
+    "email":"mail@vasujain.me",
+    "about":"Owner"
+  }
+}

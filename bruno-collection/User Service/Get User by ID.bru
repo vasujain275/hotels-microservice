@@ -1,0 +1,19 @@
+meta {
+  name: Get User by ID
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{user-service}}/users/6335eb61-b3df-447e-a744-33607834a8b2
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "name":"Vasu Jain",
+    "email":"mail@vasujain.me",
+    "about":"Owner"
+  }
+}

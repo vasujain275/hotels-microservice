@@ -1,0 +1,11 @@
+meta {
+  name: Get Users
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{gateway}}/users
+  body: none
+  auth: inherit
+}
