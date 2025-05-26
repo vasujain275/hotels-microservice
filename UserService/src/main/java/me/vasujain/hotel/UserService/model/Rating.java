@@ -18,4 +18,5 @@ public class Rating {
     private UUID hotelId;
     private int rating;
     private String feedback;
+    private Hotel hotel;
 }

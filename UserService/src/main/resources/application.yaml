@@ -1,6 +1,6 @@
 spring:
   application:
-    name: UserService
+    name: USER-SERVICE
   datasource:
     url: jdbc:postgresql://localhost:5432/hotel-userServiceDB
     username: postgres
