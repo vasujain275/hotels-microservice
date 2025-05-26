@@ -40,4 +40,12 @@ public class RatingServiceImpl implements RatingService {
         return ratingRepository.findById(ratingId)
                 .orElseThrow(() -> new RuntimeException("Rating not found with id: " + ratingId));
     }
+
+    @Override
+    public void deleteRating(String ratingId) {
+        if (!ratingRepository.existsById(ratingId)) {
+            throw new RuntimeException("Rating not found with id: " + ratingId);
+        }
+        ratingRepository.deleteById(ratingId);
+    }
 }

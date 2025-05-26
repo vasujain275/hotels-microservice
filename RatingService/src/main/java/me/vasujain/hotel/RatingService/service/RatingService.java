@@ -21,4 +21,6 @@ public interface RatingService {
 
     // Get a rating by ID
     Rating getRatingById(String ratingId);
+
+    void deleteRating(String ratingId);
 }

@@ -47,6 +47,11 @@ public class RatingController {
         return ResponseEntity.ok(rating);
     }
 
-
+    @DeleteMapping("/{ratingId}")
+    public ResponseEntity<Void> deleteRating(@PathVariable String ratingId) {
+        ratingService.getRatingById(ratingId); // Check if the rating exists
+        ratingService.deleteRating(ratingId); // Assuming deleteRating method is implemented in RatingService
+        return ResponseEntity.noContent().build();
+    }
 
 }
